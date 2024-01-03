@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-blue: #0000ff;
+    --secondary-blue: #3436ff;
+    --third-blue: #616eff;
+
+    --primary-green: #00ff00;
+    --secondary-green: #55ff50;
+    --third-green: #82ff81;
+
+
+    --primary-yellow: #ffef00;
+    --secondary-yellow: #fff842;
+    --third-yellow: #fffd68;
+    /*
+    --primary-grey: #606665;
+    --secondary-grey: #828a88;
+    --third-grey: #b0bab8;
+
+    --primary-orange: #de6711;
+    --secondary-orange: #de8c3d;
+    --third-orange: #de9e53;
+    */
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+header {
+    min-height: 15vh;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: var(--secondary-blue);
+    box-shadow: 0 0 25px 2px black;
+}
+
+header a {
+    display: inline-block;
+    min-width: 20%;
+    margin: auto;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+a > img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+section img {
+    display: inline-block;
+    width: 100%;
+}
+
+section h2 {  
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: inline-block;
+    min-width: 40%;
+    max-width: 90%;
+    margin: auto;
+    font-family: monospace;
+    padding: 1em;
+    font-size: 3em;
+    background-color: rgba(0,0,255, 0.5);
+    border-radius: 1em;  
+    animation: blink 5s infinite ;
+}
+
+aside {
+    width: 100%;
+    min-height: 20vh;
+    background-color: var(--secondary-blue);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+
+aside > * {
+    min-width: 10%;
+    min-height: 10vh;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5em;
+
+}
+
+
+/*for smaller screens*/
+@media (max-width: 480px) {
+    
+    section h2 {
+        font-size: 1em;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+}
+
+
+/* animations */
+
+@keyframes blink {
+    0% {
+        color: rgba(0,0,255, 0.5);
+        transform: scale(1);
+    }
+
+    50% {
+        color: white;
+        transform: scale(1.05);
+    }
+
+    100% {
+        color: rgba(0,0,255, 0.5);
+        transform: scale(1);
+    }
+}
