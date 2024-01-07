@@ -1,0 +1,36 @@
+$primary: #211F8B;
+$primary-dark:rgb(18, 16, 75);
+$secondary: #F4F4F7;
+$tertiary: #FD8313;
+
+// all fonts to be used
+@font-face {
+    font-family: Poppins;
+    src: url('./../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Poppins Semi-Bold";
+    src: url('./../fonts/Poppins-Semi-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins Extra-Bold";
+    src: url('./../fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "Black Ops One";
+    src: url('./../fonts/BlackOpsOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "JosefinSans-Bold";
+    src: url('./../fonts/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "JosefinSans-Regular";
+    src: url('./../fonts/JosefinSans-Bold.ttf');
+}
+
