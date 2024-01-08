@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "Poppins Semi-Bold";
-  src: url("./../fonts/Poppins-Semi-Bold.ttf");
+  src: url("./../fonts/Poppins-SemiBold.ttf");
 }
 @font-face {
   font-family: "Poppins Extra-Bold";
@@ -172,6 +172,47 @@ strong {
   line-height: 21px;
   font-family: Poppins;
   font-weight: w500;
+}
+
+@media screen and (min-width: 350px) and (max-width: 599px) {
+  img {
+    width: 70px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  h2 {
+    font-family: "Poppins Semi-Bold";
+    font-size: 50px;
+    line-height: 60px;
+  }
+  h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  h4 {
+    font-family: "JosefinSans-Regular";
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .socials-section {
+    margin-top: 32px;
+  }
+  .socials {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+    width: 75%;
+    max-width: 300px;
+  }
+  .mail-section::before {
+    transform: skewY(-4deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
