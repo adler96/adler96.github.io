@@ -98,6 +98,7 @@ strong {
   padding: 0px 8px;
   display: inline-block;
   transform: skewX(-15deg);
+  animation: skewing 1s linear infinite alternate;
 }
 
 .socials-section {
@@ -462,6 +463,14 @@ strong {
     line-height: 41px;
     font-family: Poppins;
     font-weight: w500;
+  }
+}
+@keyframes skewing {
+  from {
+    transform: skewX(-15deg);
+  }
+  to {
+    transform: skewX(-5deg);
   }
 }
 
