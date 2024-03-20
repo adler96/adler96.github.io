@@ -29,11 +29,12 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: #211F8B;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 32px;
 }
@@ -172,7 +173,7 @@ strong {
   font-size: 16px;
   line-height: 21px;
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: w500;
 }
 
 @media screen and (min-width: 350px) and (max-width: 599px) {
@@ -314,7 +315,7 @@ strong {
     font-size: 16px;
     line-height: 21px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: w500;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -420,7 +421,7 @@ strong {
     font-size: 32px;
     line-height: 41px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: w500;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -462,7 +463,7 @@ strong {
     font-size: 32px;
     line-height: 41px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: w500;
   }
 }
 @keyframes skewing {
